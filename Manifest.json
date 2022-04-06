@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Spect",
+    "version": "0.01",
+    "description": "Spect vous permet d'identifier rapidement les clients actifs de GORH",
+    "content_scripts": [
+        {
+            "matches": ["*://www.linkedin.com/*"],
+            "js": ["content.js"],
+            "css": ["highlight.css"]
+        }
+    ],
+"host_permissions": [
+  "*://www.linkedin.com/*"], 
+
+"permissions": ["storage", "unlimitedStorage", "tabs"]
+}
